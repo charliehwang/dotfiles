@@ -20,7 +20,7 @@ export UPDATE_ZSH_DAYS=13
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vi-mode cp zsh-autosuggestions zsh-z)
+plugins=(git vi-mode cp zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -147,7 +147,7 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#353535"
 bindkey '^ ' autosuggest-accept
 
 # ZSH-Z
-ZSHZ_CMD=j
+# ZSHZ_CMD=j
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
