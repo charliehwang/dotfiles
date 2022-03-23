@@ -19,6 +19,7 @@
 #
 # @see: http://secrets.blacktree.com/?showapp=com.apple.finder
 # @see: https://github.com/herrbischoff/awesome-macos-command-line
+# @see: https://github.com/kevinSuttle/macOS-Defaults/blob/master/.macos
 #
 # @author Jeff Geerling
 
@@ -62,9 +63,16 @@ defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 # Set background to black color
 osascript -e 'tell application "Finder" to set desktop picture to POSIX file "/System/Library/Desktop Pictures/Solid Colors/Black.png"'
 
+# Disable Notification Center and remove the menu bar icon
+launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null
+
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
 ###############################################################################
+
+# Three Finger Drag
+defaults -currentHost write NSGlobalDomain com.apple.trackpad.threeFingerSwipeGesture -int 1
+
 
 # Trackpad: Haptic feedback (light, silent clicking)
 defaults write com.apple.AppleMultitouchTrackpad FirstClickThreshold -int 0
@@ -212,13 +220,15 @@ defaults write com.apple.dock "autohide" -bool "true"
 # 12: Notification Center
 # Bottom right screen corner → Mission Control
 # defaults write com.apple.dock wvous-br-corner -int 2
-# defaults write com.apple.dock wvous-br-modifier -int 0
+defaults write com.apple.dock wvous-br-modifier -int 0
 # Top right screen corner → Put display to sleep
 # defaults write com.apple.dock wvous-tr-corner -int 10
-# defaults write com.apple.dock wvous-tr-modifier -int 0
+defaults write com.apple.dock wvous-tr-modifier -int 0
 # Bottom left screen corner → Desktop
 # defaults write com.apple.dock wvous-bl-corner -int 4
-# defaults write com.apple.dock wvous-bl-modifier -int 0
+defaults write com.apple.dock wvous-bl-modifier -int 0
+# Bottom right screen corner → noop
+defaults write com.apple.dock wvous-br-modifier -int 0
 
 ###############################################################################
 # Safari & WebKit                                                             #
