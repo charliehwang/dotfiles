@@ -168,3 +168,5 @@ typeset -gaU chpwd_functions
 chpwd_functions+=__jump_chpwd
 
 compctl -U -K jump_completion j
+
+eval "$(jump shell zsh)"
