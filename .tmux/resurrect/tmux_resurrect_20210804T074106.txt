@@ -1,9 +1,0 @@
-pane	all-0	1	:zsh	1	:*	1	:/Users/charlie	1	zsh	:
-pane	dev-0	1	:zsh	0	:-	1	:/Users/charlie/.tmux/plugins	0	zsh	:
-pane	dev-0	1	:zsh	0	:-	2	:/Users/charlie/.tmux/plugins	1	zsh	:
-pane	dev-0	1	:zsh	0	:-	3	:/Users/charlie/.tmux/plugins/tmux-continuum	0	zsh	:
-pane	dev-0	2	:zsh	1	:*	1	:/Users/charlie/projects/code/portal-tests	1	zsh	:
-window	all-0	1	1	:*	d4dd,252x69,0,0,0
-window	dev-0	1	0	:-	ff69,252x69,0,0{125x69,0,0,1,126x69,126,0[126x34,126,0,2,126x34,126,35,3]}
-window	dev-0	2	1	:*	d4e1,252x69,0,0,4
-state	dev-0	all-0
