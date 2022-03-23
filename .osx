@@ -163,6 +163,7 @@ chflags nohidden ~/Library
 
 ###############################################################################
 # Dock, Dashboard, and hot corners                                            #
+# https://macos-defaults.com/dock/
 ###############################################################################
 
 # Set the icon size of Dock items
@@ -183,8 +184,11 @@ defaults write com.apple.dock static-only -bool true
 # Dock in single-app mode. Switch to apps windows when clicking on icon
 defaults write com.apple.dock single-app -bool true
 
-# Docker speed up autohide animation
-defaults write com.apple.dock autohide-time-modifier -float 1
+# Dock speed up autohide animation
+defaults write com.apple.dock autohide-time-modifier -float 0
+
+# Dock autohide when mouse is out
+defaults write com.apple.dock "autohide" -bool "true"
 
 # Hot corners
 # Possible values:
