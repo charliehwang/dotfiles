@@ -1,6 +1,8 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+export PATH=$HOME/bin:/usr/local/sbin:/usr/local/bin:$PATH
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -24,10 +26,8 @@ plugins=(git vi-mode cp zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
-# Colors.
-unset LSCOLORS
-export CLICOLOR=1
-export CLICOLOR_FORCE=1
+export VISUAL=vim
+export EDITOR="$VISUAL"
 
 # Don't require escaping globbing characters in zsh.
 unsetopt nomatch
