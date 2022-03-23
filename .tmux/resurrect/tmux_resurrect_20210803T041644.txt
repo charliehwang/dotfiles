@@ -1,0 +1,7 @@
+pane	dev-0	1	:zsh	1	:*	1	:/Users/charlie/.tmux/plugins	0	vim	:vim /Users/charlie/.tmux.conf.local
+pane	dev-0	1	:zsh	1	:*	2	:/Users/charlie/.tmux/plugins	1	zsh	:
+pane	dev-0	1	:zsh	1	:*	3	:/Users/charlie/.tmux/plugins/tmux-continuum	0	zsh	:
+pane	dev-0	2	:zsh	0	:-	1	:/Users/charlie/.tmux/plugins/tmux-continuum	1	zsh	:
+window	dev-0	1	1	:*	9f15,291x80,0,0{145x80,0,0,0,145x80,146,0[145x40,146,0,2,145x39,146,41,3]}
+window	dev-0	2	0	:-	b55e,291x80,0,0,1
+state	dev-0	
