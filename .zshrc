@@ -1,8 +1,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-export PATH=$HOME/Library/Python/3.8/bin:/opt/homebrew/bin:$HOME/bin:/usr/local/sbin:/usr/local/bin:$PATH
-
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -31,12 +29,6 @@ export EDITOR="$VISUAL"
 
 # Don't require escaping globbing characters in zsh.
 unsetopt nomatch
-
-# Nicer prompt.
-export PS1=$'\n'"%F{green} %*%F %3~ %F{white}"$'\n'"$ "
-
-# Enable plugins.
-plugins=(git brew history kubectl history-substring-search)
 
 # Custom $PATH with extra locations.
 export PATH=$HOME/Library/Python/3.8/bin:/opt/homebrew/bin:/usr/local/bin:/usr/local/sbin:$HOME/bin:$HOME/go/bin:/usr/local/git/bin:$HOME/.composer/vendor/bin:$PATH
