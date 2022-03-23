@@ -64,15 +64,16 @@ defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 osascript -e 'tell application "Finder" to set desktop picture to POSIX file "/System/Library/Desktop Pictures/Solid Colors/Black.png"'
 
 # Disable Notification Center and remove the menu bar icon
-launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null
+# -- Doesn't work
+# launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null
 
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
 ###############################################################################
 
 # Three Finger Drag
-defaults -currentHost write NSGlobalDomain com.apple.trackpad.threeFingerSwipeGesture -int 1
-
+# -- Doesn't work
+# defaults -currentHost write NSGlobalDomain com.apple.trackpad.threeFingerSwipeGesture -int 1
 
 # Trackpad: Haptic feedback (light, silent clicking)
 defaults write com.apple.AppleMultitouchTrackpad FirstClickThreshold -int 0
@@ -175,7 +176,7 @@ chflags nohidden ~/Library
 ###############################################################################
 
 # Keep Spaces arrangement, do not base on most recent use
-defaults write com.apple.dock "mru-spaces" -bool "false"
+# defaults write com.apple.dock "mru-spaces" -bool "false"
 
 ###############################################################################
 # Dock, Dashboard, and hot corners                                            #
@@ -186,7 +187,7 @@ defaults write com.apple.dock "mru-spaces" -bool "false"
 defaults write com.apple.dock tilesize -int 30
 
 # Speed up Mission Control animations
-defaults write com.apple.dock expose-animation-duration -float 0.15
+defaults write com.apple.dock expose-animation-duration -float 0.05
 
 # Make Dock icons of hidden applications translucent
 defaults write com.apple.dock showhidden -bool true
@@ -220,15 +221,15 @@ defaults write com.apple.dock "autohide" -bool "true"
 # 12: Notification Center
 # Bottom right screen corner → Mission Control
 # defaults write com.apple.dock wvous-br-corner -int 2
-defaults write com.apple.dock wvous-br-modifier -int 0
+defaults write com.apple.dock wvous-br-corner -int 0
 # Top right screen corner → Put display to sleep
 # defaults write com.apple.dock wvous-tr-corner -int 10
-defaults write com.apple.dock wvous-tr-modifier -int 0
+defaults write com.apple.dock wvous-tr-corner -int 0
 # Bottom left screen corner → Desktop
 # defaults write com.apple.dock wvous-bl-corner -int 4
-defaults write com.apple.dock wvous-bl-modifier -int 0
+defaults write com.apple.dock wvous-bl-corner -int 0
 # Bottom right screen corner → noop
-defaults write com.apple.dock wvous-br-modifier -int 0
+defaults write com.apple.dock wvous-br-corner -int 0
 
 ###############################################################################
 # Safari & WebKit                                                             #
