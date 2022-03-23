@@ -162,6 +162,14 @@ defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
 chflags nohidden ~/Library
 
 ###############################################################################
+# Mission Control - Spaces
+# https://macos-defaults.com/mission-control/
+###############################################################################
+
+# Keep Spaces arrangement, do not base on most recent use
+defaults write com.apple.dock "mru-spaces" -bool "false"
+
+###############################################################################
 # Dock, Dashboard, and hot corners                                            #
 # https://macos-defaults.com/dock/
 ###############################################################################
