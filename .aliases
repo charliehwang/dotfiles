@@ -9,4 +9,3 @@ alias gcap='gitCommitAndPush $@'
 
 #
 alias src='source ~/.zshrc'
-alias j='jump'
