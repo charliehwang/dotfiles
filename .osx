@@ -72,8 +72,7 @@ osascript -e 'tell application "Finder" to set desktop picture to POSIX file "/S
 ###############################################################################
 
 # Three Finger Drag
-# -- Doesn't work
-# defaults -currentHost write NSGlobalDomain com.apple.trackpad.threeFingerSwipeGesture -int 1
+defaults -currentHost write NSGlobalDomain com.apple.trackpad.threeFingerSwipeGesture -int 1
 
 # Trackpad: Haptic feedback (light, silent clicking)
 defaults write com.apple.AppleMultitouchTrackpad FirstClickThreshold -int 0
