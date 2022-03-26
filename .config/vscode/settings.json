@@ -1,8 +1,9 @@
 {
-    "editor.fontFamily": "Meslo LG S DZ, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontFamily": "Operator Mono Light, Meslo LG S DZ, Menlo, Monaco, 'Courier New', monospace",
     "terminal.external.osxExec": "iTerm.app",
     "terminal.integrated.defaultProfile.osx": "zsh",
     "terminal.integrated.fontFamily": "Menlo, Monaco, monospace",
-    "workbench.sideBar.location": "right"
+    "workbench.sideBar.location": "right",
+    "window.zoomLevel": 1
 }
     
