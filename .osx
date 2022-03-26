@@ -184,22 +184,22 @@ chflags nohidden ~/Library
 ###############################################################################
 
 # Set the icon size of Dock items
-defaults write com.apple.dock tilesize -int 30
+defaults write com.apple.dock tilesize -int 35
 
 # Speed up Mission Control animations
 defaults write com.apple.dock expose-animation-duration -float 0.05
 
 # Make Dock icons of hidden applications translucent
-defaults write com.apple.dock showhidden -bool true
+# defaults write com.apple.dock showhidden -bool true
 
 # Enable the 'reduce transparency' option. Save GPU cycles.
-defaults write com.apple.universalaccess reduceTransparency -bool true
+# defaults write com.apple.universalaccess reduceTransparency -bool true
 
 # Have Dock show only active apps
-defaults write com.apple.dock static-only -bool true
+# defaults write com.apple.dock static-only -bool true
 
 # Dock in single-app mode. Switch to apps windows when clicking on icon
-defaults write com.apple.dock single-app -bool true
+defaults write com.apple.dock single-app -bool false
 
 # Dock speed up autohide animation
 defaults write com.apple.dock autohide-time-modifier -float 0
@@ -221,17 +221,17 @@ defaults write com.apple.dock "autohide" -bool "true"
 # 12: Notification Center
 # Bottom right screen corner → Mission Control
 # defaults write com.apple.dock wvous-br-corner -int 2
-defaults write com.apple.dock wvous-br-corner -int 0
+# defaults write com.apple.dock wvous-br-corner -int 0
 # Top right screen corner → Put display to sleep
 # defaults write com.apple.dock wvous-tr-corner -int 10
-defaults write com.apple.dock wvous-tr-corner -int 0
+# defaults write com.apple.dock wvous-tr-corner -int 0
 # Bottom left screen corner → Desktop
 # defaults write com.apple.dock wvous-bl-corner -int 4
-defaults write com.apple.dock wvous-bl-corner -int 0
+# defaults write com.apple.dock wvous-bl-corner -int 0
 # Bottom right screen corner → noop
-defaults write com.apple.dock wvous-br-corner -int 0
+# defaults write com.apple.dock wvous-br-corner -int 0
 
-###############################################################################
+##############################################################################
 # Safari & WebKit                                                             #
 ###############################################################################
 
